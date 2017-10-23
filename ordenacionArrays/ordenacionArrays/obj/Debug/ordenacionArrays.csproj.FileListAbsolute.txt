@@ -1,0 +1,6 @@
+c:\users\cfgs\documents\visual studio 2015\Projects\ordenacionArrays\ordenacionArrays\bin\Debug\ordenacionArrays.exe.config
+c:\users\cfgs\documents\visual studio 2015\Projects\ordenacionArrays\ordenacionArrays\bin\Debug\ordenacionArrays.exe
+c:\users\cfgs\documents\visual studio 2015\Projects\ordenacionArrays\ordenacionArrays\bin\Debug\ordenacionArrays.pdb
+c:\users\cfgs\documents\visual studio 2015\Projects\ordenacionArrays\ordenacionArrays\obj\Debug\ordenacionArrays.csprojResolveAssemblyReference.cache
+c:\users\cfgs\documents\visual studio 2015\Projects\ordenacionArrays\ordenacionArrays\obj\Debug\ordenacionArrays.exe
+c:\users\cfgs\documents\visual studio 2015\Projects\ordenacionArrays\ordenacionArrays\obj\Debug\ordenacionArrays.pdb
