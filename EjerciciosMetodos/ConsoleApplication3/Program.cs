@@ -26,17 +26,33 @@ namespace ConsoleApplication3
             return (int)num1;
         }
 
-        public static int ejercicio4(double num1, ref int num2)
+        public static void ejercicio4(double num1, int num2)
         {
-            num2 = (int)num1;
-            return num2;
+            num2 = 2;
+            num1 = Math.Round(num1 , num2);
+            Console.WriteLine(num1);
+        }
+
+        public static double ejercicio5(double num1, int num2, ref double num3)
+        {
+            num2 = 2;
+            num3 = Math.Round(num1, num2);
+            return num3;
+        }
+
+        public static double ejercicio6(ref double num1, int num2)
+        {
+            num2 = 2;
+            num1 = Math.Round(num1, num2);
+            return num1;
         }
         static void Main(string[] args)
         {
             int switchNum = 0;
             double num1 = 764.783;
             int num2 = 0;
-            
+            double num3 = 0;
+
             do
             {
                 Console.Clear();
@@ -80,19 +96,20 @@ namespace ConsoleApplication3
                     case 4:
                         Console.Clear();
                         Console.WriteLine("4.- Un parámetro de tipo real y otro parámetro de tipo entero y devuelve el número tras truncar la parte decimal a los decimales indicados por el segundo parámetro");
-                        Console.WriteLine(ejercicio4(num1, ref num2));
+                        ejercicio4(num1, num2);
                         Console.ReadLine();
                         break;
                     case 5:
                         Console.Clear();
                         Console.WriteLine("5.- Un parámetro de tipo real, otro parámetro de tipo entero y de tipo real. El método almacena sobre el tercer parámetro el número tras truncar la parte decimal a los decimales indicado por el segundo parámetro");
-
+                        
+                        Console.WriteLine(ejercicio5(num1, num2, ref num3));
                         Console.ReadLine();
                         break;
                     case 6:
                         Console.Clear();
                         Console.WriteLine("6.- Un parámetro de tipo real y otro de tipo entreo. Almacena sobre el primer parámetro el número tras truncar la parte decumal de los decimales indicado por el segundo parámetro");
-
+                        Console.WriteLine(ejercicio6(ref num1, num2));
                         Console.ReadLine();
                         break;
                     

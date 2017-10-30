@@ -4,3 +4,9 @@ c:\users\david\documents\visual studio 2015\Projects\ConsoleApplication3\Console
 c:\users\david\documents\visual studio 2015\Projects\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
 c:\users\david\documents\visual studio 2015\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
 c:\users\david\documents\visual studio 2015\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
