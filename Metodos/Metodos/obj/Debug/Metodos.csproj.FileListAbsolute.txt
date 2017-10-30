@@ -1,0 +1,6 @@
+c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\bin\Debug\Metodos.exe.config
+c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\bin\Debug\Metodos.exe
+c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\bin\Debug\Metodos.pdb
+c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\obj\Debug\Metodos.csprojResolveAssemblyReference.cache
+c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\obj\Debug\Metodos.exe
+c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\obj\Debug\Metodos.pdb
