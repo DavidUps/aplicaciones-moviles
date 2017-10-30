@@ -4,3 +4,9 @@ c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\bin\Debug\Me
 c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\obj\Debug\Metodos.csprojResolveAssemblyReference.cache
 c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\obj\Debug\Metodos.exe
 c:\users\cfgs\documents\visual studio 2015\Projects\Metodos\Metodos\obj\Debug\Metodos.pdb
+C:\Users\David\Documents\GitHub\aplicaciones-moviles\Metodos\Metodos\bin\Debug\Metodos.exe.config
+C:\Users\David\Documents\GitHub\aplicaciones-moviles\Metodos\Metodos\obj\Debug\Metodos.exe
+C:\Users\David\Documents\GitHub\aplicaciones-moviles\Metodos\Metodos\obj\Debug\Metodos.pdb
+C:\Users\David\Documents\GitHub\aplicaciones-moviles\Metodos\Metodos\bin\Debug\Metodos.exe
+C:\Users\David\Documents\GitHub\aplicaciones-moviles\Metodos\Metodos\bin\Debug\Metodos.pdb
+C:\Users\David\Documents\GitHub\aplicaciones-moviles\Metodos\Metodos\obj\Debug\Metodos.csprojResolveAssemblyReference.cache
