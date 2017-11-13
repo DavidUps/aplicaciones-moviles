@@ -26,9 +26,36 @@ namespace Metodos
             anio = a;
         }
         //fecha se corresponde a un año bisiesto.
-        public int Anio()
+        public bool Anio()
         {
-            return this.anio;
+
+            if (anio % 4 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            if (anio % 4 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            if (anio % 4 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
         //Aumentar en el mes en 1 y cambar de año si es 12 + 1.
         public void sumMes()
@@ -36,15 +63,28 @@ namespace Metodos
             mes = mes + 1;
             if (mes == 13)
             {
-                this.anio = anio + 1;
-                this.mes = 0;
+                this.anio ++;
+                this.mes = 1;
             }
                 
         }
         //Devolver el numero de dias desde el 1 de enero del año en curso.
         public int Dia()
         {
-            return dia;
+            int nDias = 0;
+            int[] tablaMes = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            if(Anio())
+            {
+                tablaMes[1] = 29;
+            }else
+            {
+                tablaMes[1] = 28;
+            }
+            for (int i = 0; i<= mes -1; i++)
+            {
+                nDias += tablaMes[i]; 
+            }
+            return nDias;
         }
 
         public int Mes()
@@ -53,12 +93,20 @@ namespace Metodos
         }
         //Crear 3 fechas y leer los valores de las fechas por pantalla.
         //Crea la mayor de todas las fechas.
-        public void imprimirFechas()
+        public bool esMayor(Fecha f)
         {
-            Console.Write(this.dia  + "-");
-            Console.Write(this.mes  + "-");
-            Console.Write(this.anio);
-            Console.Write("\n");
+            if((anio > f.anio) || (anio == f.anio) && (mes > f.mes) || (anio == f.anio) && (mes > f.mes) && (dia == f.dia))
+            {
+                return true;
+            }
+            else
+            {
+                return false;   
+            }
+        }
+        public string Imprimir()
+        {
+            return dia + "/" + mes + "/" + anio;
         }
     }
 }
