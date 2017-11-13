@@ -11,7 +11,7 @@ namespace Metodos
             static void Main(string[] args)
         {
             Fecha f1 = new Fecha(30,11,2004),
-                  f2 = new Fecha(12,1,2017),
+                  f2 = new Fecha(12,1,2007),
                   f3 = new Fecha(5, 6, 2008),
                   f4 = new Fecha(1, 1, 1);
 
@@ -33,32 +33,9 @@ namespace Metodos
                     case 1:
                         Console.Clear();
                         Console.WriteLine("1.- Fecha se corresponde a un año bisiesto.");
-                        if (f1.Anio() % 4 == 0)
-                        {
-                            Console.WriteLine("Es bisiesto");
-                        }
-                        else
-                        {
-                            Console.WriteLine("No lo es");
-                        }
-
-                        if (f2.Anio() % 4 == 0)
-                        {
-                            Console.WriteLine("Es bisiesto");
-                        }
-                        else
-                        {
-                            Console.WriteLine("No lo es");
-                        }
-
-                        if (f3.Anio() % 4 == 0)
-                        {
-                            Console.WriteLine("Es bisiesto");
-                        }
-                        else
-                        {
-                            Console.WriteLine("No lo es");
-                        }
+                        f1.Anio();
+                        f2.Anio();
+                        f3.Anio();
                         Console.ReadKey();
                         break;
 
@@ -68,86 +45,30 @@ namespace Metodos
                         f1.sumMes();
                         f2.sumMes();
                         f3.sumMes();
-                        f1.imprimirFechas();
-                        f2.imprimirFechas();
-                        f3.imprimirFechas();
                         Console.ReadKey();
                         break;
                     case 3:
                         Console.Clear();
                         Console.WriteLine("3.- Devolver el numero de dias desde el 1 de enero del año en curso");
-                        int totalF1 = 0,
-                            totalF2 = 0,
-                            totalF3 = 0;
-
-                        do
-                        {
-                            if (f1.Mes() == 2)
-                            {
-                                f1.sumMes();
-                                totalF1 = totalF1 + 27;
-                            }
-                            if (f1.Mes() % 2 != 0)
-                            {
-                                f1.sumMes();
-                                totalF1 = totalF1 + 30;
-                            }
-                            if (f1.Mes() % 2 == 0)
-                            {
-                                f1.sumMes();
-                                totalF1 = totalF1 + 31;
-                            }
-                        } while (f4.Dia() != f1.Dia() && f4.Mes() != f1.Mes());
-
-                        do
-                        {
-                            if (f2.Mes() == 2)
-                            {
-                                f2.sumMes();
-                                totalF2 = totalF2 + 27;
-                            }
-                            if (f2.Mes() % 2 != 0)
-                            {
-                                f2.sumMes();
-                                totalF2 = totalF2 + 30;
-                            }
-                            if (f2.Mes() % 2 == 0)
-                            {
-                                f2.sumMes();
-                                totalF2 = totalF2 + 31;
-                            }
-                        } while (f4.Dia() != f2.Dia() && f4.Mes() != f2.Mes());
-
-                        do
-                        {
-                            if (f3.Mes() == 2)
-                            {
-                                f3.sumMes();
-                                totalF3 = totalF3 + 27;
-                            }
-                            if (f3.Mes() % 2 != 0)
-                            {
-                                f3.sumMes();
-                                totalF3 = totalF3 + 30;
-                            }
-                            if (f3.Mes() % 2 == 0)
-                            {
-                                f3.sumMes();
-                                totalF3 = totalF3 + 31;
-                            }
-                        } while (f4.Dia() != f3.Dia() && f4.Mes() != f3.Mes());
-
-                        Console.Write("total de dias F1: " + totalF1 + "\n");
-                        Console.Write("total de dias F2: " + totalF2 + "\n");
-                        Console.Write("total de dias f3: " + totalF3 + "\n");
                         Console.ReadKey();
                         break;
                     case 4:
                         Console.Clear();
                         Console.WriteLine("4.- Imprime la mayor de todas las fechas");
-                        f1.imprimirFechas();
-                        f2.imprimirFechas();
-                        f3.imprimirFechas();
+                        if (f1.esMayor(f2) && f1.esMayor(f3) && f1.esMayor(f4))
+                        {
+                            Console.WriteLine(f1.Imprimir());
+                        }
+                        else if ((f2.esMayor(f3) && f2.esMayor(f4)))
+                        {
+                            Console.WriteLine(f2.Imprimir());
+                        }
+                        else if (f3.esMayor(f4))
+                        {
+                            Console.WriteLine(f3.Imprimir());
+                        }
+                        else
+                            Console.WriteLine(f4.Imprimir());
                         Console.ReadKey();
                         break;
                 }
