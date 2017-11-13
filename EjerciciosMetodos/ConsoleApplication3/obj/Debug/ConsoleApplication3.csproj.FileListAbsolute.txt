@@ -10,3 +10,7 @@ C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleAp
 C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
 C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
 C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.manifest
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\bin\Debug\ConsoleApplication3.application
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe.manifest
+C:\Users\David\Documents\Visual Studio 2015\Projects\EjerciciosMetodos\ConsoleApplication3\obj\Debug\ConsoleApplication3.application
