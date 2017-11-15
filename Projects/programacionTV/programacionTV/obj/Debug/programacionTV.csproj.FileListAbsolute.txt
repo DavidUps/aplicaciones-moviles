@@ -1,0 +1,6 @@
+c:\users\david\documents\visual studio 2015\Projects\programacionTV\programacionTV\bin\Debug\programacionTV.exe.config
+c:\users\david\documents\visual studio 2015\Projects\programacionTV\programacionTV\bin\Debug\programacionTV.exe
+c:\users\david\documents\visual studio 2015\Projects\programacionTV\programacionTV\bin\Debug\programacionTV.pdb
+c:\users\david\documents\visual studio 2015\Projects\programacionTV\programacionTV\obj\Debug\programacionTV.csprojResolveAssemblyReference.cache
+c:\users\david\documents\visual studio 2015\Projects\programacionTV\programacionTV\obj\Debug\programacionTV.exe
+c:\users\david\documents\visual studio 2015\Projects\programacionTV\programacionTV\obj\Debug\programacionTV.pdb
