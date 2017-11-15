@@ -4,62 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programacionTV
+namespace ProgramacionTV
 {
     class Programa
     {
-        string nombre;
-        int duracion;
-        string contenido;
-        
+        private string nombre;
+        private int duracion;
+        private string contenidos;
 
-        public Programa()
+        public Programa(string n, int d, string c)
         {
-            nombre = "";
-            duracion = 0;
-            contenido = "";
+            n = nombre;
+            d = duracion;
+            c = contenidos;
         }
 
-        public void setTipo()
+        public void setPrograma(string nombre, int duracion, string contenidos)
         {
-            Console.Write("Nombre:");
-            this.nombre = Console.ReadLine();
-            Console.Write("Duracion:");
-            this.duracion = Int32.Parse(Console.ReadLine());
-            Console.Write("Contenido:");
-            this.contenido = Console.ReadLine();
+            this.nombre = nombre;
+            this.duracion = duracion;
+            this.contenidos = contenidos;
         }
-        public void setDatos()
-        {
-            this.nombre = "";
-            this.duracion = 0;
-            this.contenido = "";
-        }
-
-        public void setAumentoHorario()
-        {
-            int tiempo;
-            string aum;
-            Console.Write("quieres aumentar o disminuir");
-            aum = Console.ReadLine();
-            if (aum.Equals("aumentar"))
-            {
-                Console.Write("Cuanto tiempo quieres aumentar:");
-                tiempo = Int32.Parse(Console.ReadLine());
-                this.duracion += tiempo;
-
-            }
-            else
-            {
-                Console.Write("Cuanto tiempo quieres disminuir:");
-                tiempo = Int32.Parse(Console.ReadLine());
-                this.duracion -= tiempo;
-            }
-        }
-        public void imprimirFecha()
-        {
-            Console.WriteLine("Nombre" + nombre + "\n" + "Duración: " + duracion + "\n" + "Contenido: " + contenido + "\n");
-        }
-
     }
 }

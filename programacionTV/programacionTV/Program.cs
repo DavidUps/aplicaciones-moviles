@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programacionTV
+namespace ProgramacionTV
 {
     class Program
     {
@@ -13,13 +13,21 @@ namespace programacionTV
             int Switch;
             string texto;
 
+            Dia[] dia = new Dia[5];
+
+            dia[0] = new Dia("lunes");
+            dia[1] = new Dia("martes");
+            dia[2] = new Dia("miercoles");
+            dia[3] = new Dia("jueves");
+            dia[4] = new Dia("viernes");
+
             do
             {
-                Console.WriteLine("1.- Asignar un programa nuevo a un día y horario concreto" + "\n" 
-                                + "2.- Eliminar un programa" + "\n" 
-                                + "3.- Modificar los minutos de un programa" + "\n" 
-                                + "4.- Mostrar programación semanal" + "\n" 
-                                + "5.- Mostrar programación diaria" + "\n" 
+                Console.WriteLine("1.- Asignar un programa nuevo a un día y horario concreto" + "\n"
+                                + "2.- Eliminar un programa" + "\n"
+                                + "3.- Modificar los minutos de un programa" + "\n"
+                                + "4.- Mostrar programación semanal" + "\n"
+                                + "5.- Mostrar programación diaria" + "\n"
                                 + "6.- Mostrar contenidos por día" + "\n"
                                 + "7.- Salir");
                 Switch = Int32.Parse(Console.ReadLine());
@@ -29,80 +37,28 @@ namespace programacionTV
                     case 1:
                         Console.WriteLine("¿Qué día?");
                         texto = Console.ReadLine();
-                        Console.WriteLine("¿En qué rango? | 8:00 – 10:00: primera, 10:00 – 14:00: matinal, 14:00 – 16:00: mediodia, 16:00 – 20:00: tarde, 20:00 – 24:00: noche");
-                        texto += Console.ReadLine();
-                        Programa texto1 = new Programa();
-                        texto1.setTipo();
-                        Console.ReadKey();
+                        for(int i = 0; i < 5; i++)
+                        {
+                            if (dia[i].getDia().Equals(texto))
+                            {
+                                dia[i].setDia(texto);
+                            }
+                                
+                        }
+                        
                         break;
                     //eliminar programa
                     case 2:
-                        Console.WriteLine("¿Qué día?");
-                        texto = Console.ReadLine();
-                        Console.WriteLine("¿En qué rango? | 8:00 – 10:00: primera, 10:00 – 14:00: matinal, 14:00 – 16:00: mediodia, 16:00 – 20:00: tarde, 20:00 – 24:00: noche");
-                        texto += Console.ReadLine();
-                        texto1.setDatos();
-                        Console.ReadKey();
                         break;
                     //modificar minutos
                     case 3:
-                        Console.WriteLine("¿Qué día?");
-                        texto = Console.ReadLine();
-                        Console.WriteLine("¿En qué rango? | 8:00 – 10:00: primera, 10:00 – 14:00: matinal, 14:00 – 16:00: mediodia, 16:00 – 20:00: tarde, 20:00 – 24:00: noche");
-                        texto += Console.ReadLine();
-                        texto1.setAumentoHorario();
-                        Console.ReadKey();
                         break;
                     //Mostrar programación semanal
                     case 4:
-                        texto1.imprimirFecha();
                         break;
                     //Mostrar programación diaria
                     case 5:
-                        string dia;
-                        Console.Write("dia:");
-                        dia = Console.ReadLine();
-                        if (dia.Equals("lunes"))
-                        {
-                            lunesprimera.imprimirFecha();
-                            lunesmatinal.imprimirFecha();
-                            lunesmediodia.imprimirFecha();
-                            lunestarde.imprimirFecha();
-                            lunesnoche.imprimirFecha();
-                        }
-                        if (dia.Equals("martes"))
-                        {
-                            martesprimera.imprimirFecha();
-                            martesmatinal.imprimirFecha();
-                            martesmediodia.imprimirFecha();
-                            martestarde.imprimirFecha();
-                            martesnoche.imprimirFecha();
-                        }
-                        if (dia.Equals("miercoles"))
-                        {
-                            miercolesprimera.imprimirFecha();
-                            miercolesmatinal.imprimirFecha();
-                            miercolesmediodia.imprimirFecha();
-                            miercolestarde.imprimirFecha();
-                            miercolesnoche.imprimirFecha();
-                        }
-                        if (dia.Equals("jueves"))
-                        {
-                            juevesprimera.imprimirFecha();
-                            juevesmatinal.imprimirFecha();
-                            juevesmediodia.imprimirFecha();
-                            juevestarde.imprimirFecha();
-                            juevesnoche.imprimirFecha();
-                        }
-                        if (dia.Equals("viernes"))
-                        {
-                            viernesprimera.imprimirFecha();
-                            viernesmatinal.imprimirFecha();
-                            viernesmediodia.imprimirFecha();
-                            viernestarde.imprimirFecha();
-                            viernesnoche.imprimirFecha();
-                        }
-                        Console.ReadKey();
+                        
                         break;
                     //Mostrar contenidos por día
                     case 6:
