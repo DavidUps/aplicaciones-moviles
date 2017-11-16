@@ -35,6 +35,10 @@ namespace ProgramacionTV
                 {
                     //crear programa
                     case 1:
+                        for(int a = 0; a < 5; a++)
+                        {
+                            dia[a].iniciarHora();
+                        }
                         Console.WriteLine("¿Qué día?");
                         texto = Console.ReadLine();
                         for(int i = 0; i < 5; i++)
@@ -42,8 +46,7 @@ namespace ProgramacionTV
                             if (dia[i].getDia().Equals(texto))
                             {
                                 dia[i].setDia(texto);
-                            }
-                                
+                            }      
                         }
                         Console.ReadKey();
                         break;
@@ -77,6 +80,11 @@ namespace ProgramacionTV
                         break;
                     //Mostrar programación semanal
                     case 4:
+                        for(int i = 0; i < 5; i++)
+                        {
+                            Console.WriteLine("Dia: " + dia[i].getDia() );
+                        }
+                        
                         break;
                     //Mostrar programación diaria
                     case 5:

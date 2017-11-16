@@ -21,11 +21,10 @@ namespace ProgramacionTV
             return horario;
         }
 
-        public void setHora(string texto)
+        public Programa setHora(string texto, Programa p)
         {
             texto = horario;
 
-            Programa p = new Programa("", 0, "");
 
             string nombre, contenido;
             int duracion;
@@ -38,9 +37,11 @@ namespace ProgramacionTV
             contenido = Console.ReadLine();
 
             p.setPrograma(nombre, duracion, contenido);
+
+            return p;
         }
 
-        public void deleteProgram()
+        public void deleteProgram(Programa p)
         {
             string nombre= "", contenido ="";
             int duracion = 0;
@@ -48,7 +49,7 @@ namespace ProgramacionTV
             p.setPrograma(nombre, duracion, contenido);
         }
 
-        public void aumentarMinutos()
+        public void aumentarMinutos(Programa p)
         {
             int minutos;
             string signo;
@@ -66,6 +67,29 @@ namespace ProgramacionTV
                 minutos = Int32.Parse(Console.ReadLine());
                 p.disminuir(minutos);
             }
+        }
+
+        
+
+        public string getNombre(Programa p)
+        {
+            return p.getNombre();
+        }
+
+        public int getDuracion(Programa p)
+        {
+            return p.getDuracion();
+        }
+
+        public string getContenido(Programa p)
+        {
+            return p.getContenido();
+        }
+
+        public Programa inicializar()
+        {
+            Programa p = new Programa("", 0, "");
+            return p;
         }
 
 

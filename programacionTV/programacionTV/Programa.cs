@@ -35,5 +35,19 @@ namespace ProgramacionTV
         {
             this.duracion -= minutos;
         }
+
+        public string getNombre()
+        {
+            return nombre;
+        }
+        public int getDuracion()
+        {
+            return duracion;
+        }
+
+        public string getContenido()
+        {
+            return contenidos;
+        }
     }
 }
