@@ -25,5 +25,15 @@ namespace ProgramacionTV
             this.duracion = duracion;
             this.contenidos = contenidos;
         }
+
+        public void aumentar(int minutos)
+        {
+            this.duracion += minutos;
+        }
+
+        public void disminuir(int minutos)
+        {
+            this.duracion -= minutos;
+        }
     }
 }

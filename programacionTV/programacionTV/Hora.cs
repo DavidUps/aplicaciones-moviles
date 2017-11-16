@@ -9,7 +9,6 @@ namespace ProgramacionTV
     class Hora
     {
         private string horario;
-        Programa[] prog = new Programa[5];
 
         public Hora(string h)
         {
@@ -25,8 +24,11 @@ namespace ProgramacionTV
         public void setHora(string texto)
         {
             texto = horario;
+
+            Programa p = new Programa("", 0, "");
+
             string nombre, contenido;
-            int duracion, contador = 0;
+            int duracion;
 
             Console.WriteLine("Nombre: ");
             nombre = Console.ReadLine();
@@ -35,9 +37,37 @@ namespace ProgramacionTV
             Console.WriteLine("Contenido: ");
             contenido = Console.ReadLine();
 
-            prog[contador].setPrograma(nombre, duracion, contenido);
-            contador++;
-            Console.ReadKey();
+            p.setPrograma(nombre, duracion, contenido);
         }
+
+        public void deleteProgram()
+        {
+            string nombre= "", contenido ="";
+            int duracion = 0;
+
+            p.setPrograma(nombre, duracion, contenido);
+        }
+
+        public void aumentarMinutos()
+        {
+            int minutos;
+            string signo;
+            Console.WriteLine("¿Que quieres aumentar o disminuir?");
+            signo = Console.ReadLine();
+            if (signo.Equals("aumentar"))
+            {
+                Console.WriteLine("numero: ");
+                minutos = Int32.Parse(Console.ReadLine());
+                p.aumentar(minutos);
+            }
+            else
+            {
+                Console.WriteLine("numero: ");
+                minutos = Int32.Parse(Console.ReadLine());
+                p.disminuir(minutos);
+            }
+        }
+
+
     }
 }

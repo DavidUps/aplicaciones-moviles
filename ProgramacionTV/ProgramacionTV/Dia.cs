@@ -26,6 +26,7 @@ namespace ProgramacionTV
 
         public void setDia(string texto)
         {
+            iniciarHora();
             dia = texto;
             Console.WriteLine("¿En qué rango? | 8:00 – 10:00: primera, 10:00 – 14:00: matinal, 14:00 – 16:00: mediodia, 16:00 – 20:00: tarde, 20:00 – 24:00: noche");
             texto = Console.ReadLine();
@@ -34,6 +35,34 @@ namespace ProgramacionTV
                 if (hora[i].getHora().Equals(texto))
                 {
                     hora[i].setHora(texto);
+                }
+            }
+
+        }
+
+        public void getHora(string texto)
+        {
+            Console.WriteLine("¿En qué rango? | 8:00 – 10:00: primera, 10:00 – 14:00: matinal, 14:00 – 16:00: mediodia, 16:00 – 20:00: tarde, 20:00 – 24:00: noche");
+            texto = Console.ReadLine();
+            for (int i = 0; i < 5; i++)
+            {
+                if (hora[i].getHora().Equals(texto))
+                {
+                    hora[i].deleteProgram();
+                }
+            }
+
+        }
+
+        public void cambioMinutos(string texto)
+        {
+            Console.WriteLine("¿En qué rango? | 8:00 – 10:00: primera, 10:00 – 14:00: matinal, 14:00 – 16:00: mediodia, 16:00 – 20:00: tarde, 20:00 – 24:00: noche");
+            texto = Console.ReadLine();
+            for (int i = 0; i < 5; i++)
+            {
+                if (hora[i].getHora().Equals(texto))
+                {
+                    hora[i].aumentarMinutos();
                 }
             }
 

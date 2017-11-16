@@ -45,13 +45,35 @@ namespace ProgramacionTV
                             }
                                 
                         }
-                        
+                        Console.ReadKey();
                         break;
                     //eliminar programa
                     case 2:
+                        Console.WriteLine("¿Que dia?");
+                        texto = Console.ReadLine();
+                        for (int i = 0; i < 5; i++)
+                        {
+                            if (dia[i].getDia().Equals(texto))
+                            {
+                                dia[i].getHora(texto);
+                            }
+
+                        }
+                        Console.ReadKey();
                         break;
                     //modificar minutos
                     case 3:
+                        Console.WriteLine("¿Que dia?");
+                        texto = Console.ReadLine();
+                        for (int i = 0; i < 5; i++)
+                        {
+                            if (dia[i].getDia().Equals(texto))
+                            {
+                                dia[i].cambioMinutos(texto);
+                            }
+
+                        }
+                        Console.ReadKey();
                         break;
                     //Mostrar programación semanal
                     case 4:
