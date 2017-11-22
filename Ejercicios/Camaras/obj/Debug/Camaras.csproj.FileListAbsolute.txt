@@ -1,0 +1,7 @@
+c:\users\cfgs\documents\visual studio 2015\Projects\Ejercicios\Camaras\bin\Debug\Camaras.exe.config
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\Camaras\bin\Debug\Camaras.exe.config
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\Camaras\obj\Debug\Camaras.csprojResolveAssemblyReference.cache
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\Camaras\bin\Debug\Camaras.exe
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\Camaras\bin\Debug\Camaras.pdb
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\Camaras\obj\Debug\Camaras.exe
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\Camaras\obj\Debug\Camaras.pdb
