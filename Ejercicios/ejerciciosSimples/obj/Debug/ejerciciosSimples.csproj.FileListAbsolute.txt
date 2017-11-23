@@ -1,0 +1,6 @@
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\ejerciciosSimples\bin\Debug\ejerciciosSimples.exe.config
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\ejerciciosSimples\bin\Debug\ejerciciosSimples.exe
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\ejerciciosSimples\bin\Debug\ejerciciosSimples.pdb
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\ejerciciosSimples\obj\Debug\ejerciciosSimples.csprojResolveAssemblyReference.cache
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\ejerciciosSimples\obj\Debug\ejerciciosSimples.exe
+C:\Users\CFGS\Documents\GitHub\aplicaciones-moviles\Ejercicios\ejerciciosSimples\obj\Debug\ejerciciosSimples.pdb
