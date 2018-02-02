@@ -48,8 +48,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.memori_TextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addOrder_Button = new System.Windows.Forms.Button();
+            this.deleteOrder_Button = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.ramOperation_TextBox = new System.Windows.Forms.TextBox();
             this.operation_ComboBox = new System.Windows.Forms.ComboBox();
@@ -62,6 +62,8 @@
             this.priceOperation_TextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.operativeSistem_TextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,8 +71,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.operativeSistem_TextBox);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.deleteOrder_Button);
+            this.groupBox1.Controls.Add(this.addOrder_Button);
             this.groupBox1.Controls.Add(this.memori_TextBox);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.batery_TextBox);
@@ -92,7 +96,7 @@
             this.groupBox1.Controls.Add(this.order_ComboBox);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 329);
+            this.groupBox1.Size = new System.Drawing.Size(200, 353);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -108,6 +112,7 @@
             this.order_ComboBox.Name = "order_ComboBox";
             this.order_ComboBox.Size = new System.Drawing.Size(187, 21);
             this.order_ComboBox.TabIndex = 0;
+            this.order_ComboBox.SelectedIndexChanged += new System.EventHandler(this.order_ComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -179,6 +184,7 @@
             this.port_TextBox.Name = "port_TextBox";
             this.port_TextBox.Size = new System.Drawing.Size(100, 20);
             this.port_TextBox.TabIndex = 12;
+            this.port_TextBox.Visible = false;
             // 
             // label5
             // 
@@ -195,6 +201,7 @@
             this.speed_TextBox.Name = "speed_TextBox";
             this.speed_TextBox.Size = new System.Drawing.Size(100, 20);
             this.speed_TextBox.TabIndex = 10;
+            this.speed_TextBox.Visible = false;
             // 
             // label6
             // 
@@ -211,6 +218,7 @@
             this.batery_TextBox.Name = "batery_TextBox";
             this.batery_TextBox.Size = new System.Drawing.Size(100, 20);
             this.batery_TextBox.TabIndex = 16;
+            this.batery_TextBox.Visible = false;
             // 
             // label7
             // 
@@ -227,6 +235,7 @@
             this.resolution_TextBox.Name = "resolution_TextBox";
             this.resolution_TextBox.Size = new System.Drawing.Size(100, 20);
             this.resolution_TextBox.TabIndex = 14;
+            this.resolution_TextBox.Visible = false;
             // 
             // label8
             // 
@@ -243,6 +252,7 @@
             this.memori_TextBox.Name = "memori_TextBox";
             this.memori_TextBox.Size = new System.Drawing.Size(100, 20);
             this.memori_TextBox.TabIndex = 18;
+            this.memori_TextBox.Visible = false;
             // 
             // label9
             // 
@@ -253,23 +263,24 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Almacenamiento";
             // 
-            // button1
+            // addOrder_Button
             // 
-            this.button1.Location = new System.Drawing.Point(9, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addOrder_Button.Location = new System.Drawing.Point(7, 324);
+            this.addOrder_Button.Name = "addOrder_Button";
+            this.addOrder_Button.Size = new System.Drawing.Size(96, 23);
+            this.addOrder_Button.TabIndex = 19;
+            this.addOrder_Button.Text = "Añadir";
+            this.addOrder_Button.UseVisualStyleBackColor = true;
+            this.addOrder_Button.Click += new System.EventHandler(this.addOrder_Button_Click);
             // 
-            // button2
+            // deleteOrder_Button
             // 
-            this.button2.Location = new System.Drawing.Point(111, 295);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 23);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.deleteOrder_Button.Location = new System.Drawing.Point(109, 324);
+            this.deleteOrder_Button.Name = "deleteOrder_Button";
+            this.deleteOrder_Button.Size = new System.Drawing.Size(83, 23);
+            this.deleteOrder_Button.TabIndex = 20;
+            this.deleteOrder_Button.Text = "Eliminar";
+            this.deleteOrder_Button.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -309,9 +320,9 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(6, 55);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.Size = new System.Drawing.Size(29, 13);
             this.label19.TabIndex = 21;
-            this.label19.Text = "label19";
+            this.label19.Text = "Ram";
             // 
             // moreRam_Button
             // 
@@ -354,9 +365,9 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(6, 81);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 13);
+            this.label20.Size = new System.Drawing.Size(37, 13);
             this.label20.TabIndex = 25;
-            this.label20.Text = "label20";
+            this.label20.Text = "Precio";
             // 
             // priceOperation_TextBox
             // 
@@ -383,11 +394,28 @@
             this.listBox1.Size = new System.Drawing.Size(187, 173);
             this.listBox1.TabIndex = 0;
             // 
+            // operativeSistem_TextBox
+            // 
+            this.operativeSistem_TextBox.Location = new System.Drawing.Point(94, 286);
+            this.operativeSistem_TextBox.Name = "operativeSistem_TextBox";
+            this.operativeSistem_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.operativeSistem_TextBox.TabIndex = 22;
+            this.operativeSistem_TextBox.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 289);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "S.O.";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 347);
+            this.ClientSize = new System.Drawing.Size(509, 373);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -405,8 +433,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button deleteOrder_Button;
+        private System.Windows.Forms.Button addOrder_Button;
         private System.Windows.Forms.TextBox memori_TextBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox batery_TextBox;
@@ -438,6 +466,8 @@
         private System.Windows.Forms.ComboBox operation_ComboBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox operativeSistem_TextBox;
+        private System.Windows.Forms.Label label10;
     }
 }
 
