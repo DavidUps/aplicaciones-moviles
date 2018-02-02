@@ -60,8 +60,34 @@ namespace herenciasVisual
         {
             if(order_ComboBox.SelectedIndex == 0)
             {
-                
-                order.Add(new Computer());
+                string brand = brand_TextBox.Text.ToString();
+                string name = name_TextBox.Text.ToString();
+                int ram = Int32.Parse(ram_TextBox.Text.ToString());
+                int price = Int32.Parse(price_TextBox.Text.ToString());
+                int speed = Int32.Parse(speed_TextBox.Text.ToString());
+                int port = Int32.Parse(port_TextBox.Text.ToString());
+                Class.Computer computer = new Class.Computer(brand, name, ram, price, speed, port);
+                order.Add(computer)
+            }
+            if(order_ComboBox.SelectedIndex == 1)
+            {
+                string brand = brand_TextBox.Text.ToString();
+                string name = name_TextBox.Text.ToString();
+                int ram = Int32.Parse(ram_TextBox.Text.ToString());
+                int price = Int32.Parse(price_TextBox.Text.ToString());
+                int resource = Int32.Parse(resolution_TextBox.Text.ToString());
+                int batery = Int32.Parse(batery_TextBox.Text.ToString());
+                Class.Tablet tablet = new Class.Tablet(brand, name, ram, price, resource, batery);
+            }
+            if(order_ComboBox.SelectedIndex == 2)
+            {
+                string brand = brand_TextBox.Text.ToString();
+                string name = name_TextBox.Text.ToString();
+                int ram = Int32.Parse(ram_TextBox.Text.ToString());
+                int price = Int32.Parse(price_TextBox.Text.ToString());
+                string os = operativeSistem_TextBox.Text.ToString();
+                int batery = Int32.Parse(batery_TextBox.Text.ToString());
+                Class.Movile movile = new Class.Movile(brand, name, ram, price, os, batery);
             }
         }
     }
