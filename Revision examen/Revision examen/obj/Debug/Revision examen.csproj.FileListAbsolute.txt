@@ -1,6 +1,0 @@
-c:\users\david\documents\visual studio 2015\Projects\Revision examen\Revision examen\bin\Debug\Revision examen.exe.config
-c:\users\david\documents\visual studio 2015\Projects\Revision examen\Revision examen\bin\Debug\Revision examen.exe
-c:\users\david\documents\visual studio 2015\Projects\Revision examen\Revision examen\bin\Debug\Revision examen.pdb
-c:\users\david\documents\visual studio 2015\Projects\Revision examen\Revision examen\obj\Debug\Revision examen.csprojResolveAssemblyReference.cache
-c:\users\david\documents\visual studio 2015\Projects\Revision examen\Revision examen\obj\Debug\Revision examen.exe
-c:\users\david\documents\visual studio 2015\Projects\Revision examen\Revision examen\obj\Debug\Revision examen.pdb
