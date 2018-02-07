@@ -4,18 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace herenciasVisual.Class
+namespace herenciasV1
 {
-
     class Tablet : Shop
     {
-
         private int resource;
         private int batery;
 
 
 
-        public Tablet(string brand, string name, int ram, int price, int resource, int batery) : base(brand, name, ram, price)
+        public Tablet(string type,string brand, string name, int ram, int price, int resource, int batery) : base(type,brand, name, ram, price)
         {
             this.Resource = resource;
             this.Batery = batery;
@@ -51,6 +49,11 @@ namespace herenciasVisual.Class
                 batery = value;
             }
         }
+
+        public string getAllTablet()
+        {
+            string allTablet = "Marca: " + Brand + " | Modelo: " + Name + " | Ram: " + Ram + " | Precio: " + Price + " | Resolucion: " + Resource + " | Bateria: " + Batery;
+            return allTablet;
+        }
     }
-    
 }

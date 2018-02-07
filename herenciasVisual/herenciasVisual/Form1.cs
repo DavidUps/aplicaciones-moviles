@@ -67,7 +67,7 @@ namespace herenciasVisual
                 int speed = Int32.Parse(speed_TextBox.Text.ToString());
                 int port = Int32.Parse(port_TextBox.Text.ToString());
                 Class.Computer computer = new Class.Computer(brand, name, ram, price, speed, port);
-                order.Add(computer)
+                order.Add(computer);
             }
             if(order_ComboBox.SelectedIndex == 1)
             {
